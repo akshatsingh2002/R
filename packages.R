@@ -1,0 +1,7 @@
+installed.packages()
+install.packages("tidyverse")
+library("tidyverse")
+library("ggplot2")
+update.packages()
+install.packages("vignettes")
+library("vignettes")
