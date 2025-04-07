@@ -8,4 +8,6 @@ arrange(filetred_tg,len)
 arrange(filter(ToothGrowth,dose==1),len)
 piped_toothgrowth <-ToothGrowth %>%
   filter(dose == 0.5) %>%
+#  group_by(supp) %>%
+#summarize()
   arrange(len)

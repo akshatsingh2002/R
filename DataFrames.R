@@ -1,0 +1,16 @@
+data("diamonds")
+View(diamonds)
+head(diamonds)
+str(diamonds)
+colnames(diamonds)
+mutate(diamonds,carat_2=carat*100)
+
+####################################
+names <- c("aksaht","aman","arpit")
+age <- c(22,99,21)
+people <- data.frame(names,age)
+head(people)
+class(people)
+typeof(people)
+str(people)
+glimpse(people)

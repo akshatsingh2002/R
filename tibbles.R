@@ -1,0 +1,10 @@
+data("diamonds")
+diamond_tibble <- as_tibble(diamonds)
+view(diamond_tibble)
+hotel_data <- read.csv("hotel_bookings.csv")
+View(hotel_data)
+hotel_tibble <- as_tibble(hotel_data)
+
+new_df <- select(hotel_tibble, `adr`, adults)
+View(new_df)
+mutate(new_df, total = `adr` / adults)
