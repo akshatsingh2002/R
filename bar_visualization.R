@@ -1,3 +1,5 @@
 install.packages("ggplot2")
 library("ggplot2")
-ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut))
+ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut,color=cut))
+ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut,fill=cut))
+ggplot(data = diamonds) + geom_bar(mapping = aes(x=cut,fill=clarity))
