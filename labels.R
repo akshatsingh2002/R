@@ -8,3 +8,5 @@ ggplot(data=penguins) + geom_point(mapping = aes(x=flipper_length_mm,y=body_mass
 p <- ggplot(data=penguins) + geom_point(mapping = aes(x=flipper_length_mm,y=body_mass_g,color=species))+labs(title="body mass vs flipper length",subtitle ="relationship between fillper length and body mass "
                                                                                                              ,caption ="thisis a caption")
 p
+
+ggsave("Penguins.png")
